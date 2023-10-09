@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Course Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .course-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: white;
+        }
+
+        .course-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .course-info {
+            padding: 10px;
+        }
+
+        button {
+            background-color: #2ecc71;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Online Course Management</h1>
+    </header>
+
+    <section>
+        <div class="course-card">
+            <div class="course-info">
+                <h2>Course Title 1</h2>
+                <p>Instructor: John Doe</p>
+                <p>Duration: 4 weeks</p>
+                <button onclick="enrollCourse()">Enroll Now</button>
+            </div>
+        </div>
+
+        <div class="course-card">
+            <div class="course-info">
+                <h2>Course Title 2</h2>
+                <p>Instructor: Jane Smith</p>
+                <p>Duration: 6 weeks</p>
+                <button onclick="enrollCourse()">Enroll Now</button>
+            </div>
+        </div>
+
+        <!-- Add more course cards as needed -->
+
+    </section>
+
+    <script>
+        function enrollCourse() {
+            alert("Course enrolled! Enjoy learning!");
+        }
+    </script>
+
+</body>
+</html>
